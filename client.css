@@ -1,0 +1,305 @@
+*, body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+
+
+section.headerservis {
+    background: url('asset/projekbg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+    padding-inline: 50px;
+    text-align: center;
+    overflow: hidden; 
+}
+
+section.headerservis::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: linear-gradient(to top, white, transparent);
+    z-index: 0; 
+}
+
+section.headerservis h1 {
+    color: white;
+    font-size: 70px;
+    text-align: center; 
+    position: relative;
+    z-index: 2; 
+    display: inline-block;
+}
+
+section.headerservis h1::after {
+    content: '';
+    display: block;
+    width: 250px;
+    height: 5px;
+    background-color: #FFCE08; 
+    margin: 10px auto 0 auto; 
+}
+
+main {
+    margin-inline: 30px;
+}
+
+.header {
+    margin-top: 30px;
+    background-color: red;
+    max-width: 400px;
+    height: auto; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 5px 0; 
+}
+
+.header h4 {
+    color: white;
+    font-size: 25px;
+    border-left: 3px solid #FFCE08; 
+    padding: 2px 10px; 
+    margin-block: 10px; 
+}
+
+.pengantar h5{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.kotakclient {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    padding: 30px;
+}
+
+.client:hover {
+  transform: scale(1.1);
+}
+
+
+.client {
+    width: 330px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease; 
+}
+
+
+.gambarclient h6 {
+    position: absolute;
+    bottom: -8px;
+    right: 0px;
+    background-color: rgba(255, 215, 0, 0.9);
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    width: 50%;
+}
+
+.deskripsiclient {
+    padding: 20px;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.deskripsiclient h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: blue;
+}
+
+.deskripsiclient p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px){
+    .gambarclient h6 {
+        width: 100%;
+    }
+
+    .pengantar h5{
+        font-size: 20px;
+        margin-bottom: 50px;
+        margin-inline: 30px;
+    }
+
+    section.headerservis h1 {
+        font-size: 60px;
+    }
+    
+}
+
+
+.footerprofil {
+    background-color: #1F497D;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    margin-top: 200px;
+  }
+
+  .copyfooterprofil {
+    margin-bottom: 10px;
+  }
+
+  .copyrightfooterprofil h1 {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .copyrightfooterprofil p {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .ikonprofil {
+    position: absolute;
+    right: 30px;
+    top: 2%;
+    transform: translateY(-50%);
+  }
+
+  .ikonprofil a {
+    text-decoration: none;
+  }
+
+  .iconprofil {
+    font-size: 24px;
+    color: white; 
+    background-color: #FFD700;
+    border-radius: 50%;
+    padding:12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
+  }
+
+  .ikonprofil a:hover .iconprofil {
+    color: #ffffff; 
+    transform: scale(1.1);
+  }
+
+  @media screen and (max-width: 768px) {
+    .copyrightfooter h1 {
+        font-size: 10px;
+        font-weight: bold;
+        margin: 0;
+      }
+    
+      .copyrightfooter p {
+        font-size: 8px;
+    
+        }
+
+  }
+
+.accordion{
+    margin-inline: 80px;
+}
+
+@media screen and (max-width: 768px) {
+    .accordion{
+        margin-inline: 30px;
+    }
+
+    .gambarclientrill{
+        max-width: 500px;
+        max-height: 400px;
+        margin-inline: 90px;
+    }
+    
+    .gambarclientrill img{
+        max-width: 300px;
+        max-height: 200px;
+    }
+    
+    .deskripsiclientrill{
+        font-size: 14px;
+    }
+
+    .deskripsiclientrill h3, h6, p{
+        margin-top: 20px;
+    }
+
+    
+  }
+
+.clientrill{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-inline: 30px;
+}
+
+.gambarclientrill {
+    max-width: 200px; 
+    max-height: 200px; 
+    margin-inline: auto;
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.gambarclientrill img {
+    max-width: 100%; 
+    max-height: 100%; 
+    height: auto; 
+    width: auto;
+    object-fit: contain; 
+}
+
+.deskripsiclientrill{
+    width: 600px;
+
+}
+
+.deskripsiclientrill h3{
+    color: #1F497D;
+    font-size: 20px;
+}
+
+.deskripsiclientrill h6{
+    background-color: #FFD700;
+    padding: 10px;
+    font-weight: bold;
+    width: 150px;
+}
+
+.deskripsiclientrill p{
+    text-align: justify;
+    font-size: 15px;
+}
+
+h4{
+    font-size: 14px;
+    font-weight: bold;
+}

@@ -1,0 +1,478 @@
+*{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font-family: "Roboto Flex", serif;
+}
+
+.rata-justify, p {
+    text-align: justify;
+    font-family: "Roboto Flex", serif;
+}
+
+.point-deskripsi a{
+    text-decoration: none;
+    color: white;
+}
+
+.point-deskripsi a:hover{
+    color: black;
+
+}
+
+
+img{
+    transition: transform 0.3s ease;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+
+
+section.headerservis {
+    background: url('asset/generalbg.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-inline: 50px;
+    text-align: center;
+    overflow: hidden; 
+    margin-bottom: 50px;
+    margin: 0 !important;
+
+}
+
+section.headerservis::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: linear-gradient(to top, white, transparent);
+    z-index: 0; 
+}
+
+section.headerservis h1 {
+    color: white;
+    font-size: 70px;
+    text-align: center; 
+    position: relative;
+    z-index: 2; 
+    display: inline-block;
+}
+
+section.headerservis h1::after {
+    content: '';
+    display: block;
+    width: 250px;
+    height: 5px;
+    background-color: #FFCE08; 
+    margin: 10px auto 0 auto; 
+}
+
+
+
+/*Pengantar*/
+
+.pengantar {
+    margin-inline: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-block: 30px;
+    align-items: center;
+
+}
+
+.pengantar .deskrpsi {
+    width: 600px;
+    border-bottom: 2px solid red;
+    margin-top: 20px;
+}
+
+.pengantar .deskrpsi p{
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.pengantar .point-deskripsi{
+    width: 500px;
+    background-color: red;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 20px;
+}
+
+.judulbesar h5 {
+    font-size: 50px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 45px;
+    margin-inline: 80px;
+    
+}
+
+.ketjudulbesar h2{
+        font-size: 18px;
+        line-height: 25px;
+        color: red;
+        
+    }
+
+
+    .judulkecil2{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        text-align: left;
+        margin-inline: 80px;
+    }
+
+
+    .judulkecil2 h6 {
+        font-size: 30px;
+        text-align: center;
+        color: #1F497D;
+        margin-bottom: 10px;
+        font-weight: bold;
+        display: block;
+        border-bottom: 3px solid #1F497D;
+        padding-bottom: 20px;
+    }
+
+
+    .gambarproduk {
+        display: flex;
+        justify-content: center; 
+        gap: 50px;
+        flex-wrap: wrap; 
+        padding: 20px;
+    }
+    
+    .gambarproduk img {
+        max-width: 300px; 
+        height: 300px;
+        border-radius: 2px; 
+        object-fit: cover; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .gambarproduk3 {
+        display: flex;
+        justify-content: center; 
+        gap: 50px;
+        flex-wrap: wrap; 
+        padding: 20px;
+    }
+    
+    .gambarproduk3 img {
+        max-width: 550px; 
+        height: 350px;
+        border-radius: 2px; 
+        object-fit: cover; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .judulbesarfabrikasi h5 {
+        font-size: 50px;
+        text-align: left;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 45px;
+        margin-inline: 80px;
+    }
+
+    .judulbesarfabrikasi p{
+        font-size: 18px;
+        line-height: 25px;
+        margin-inline: 80px;
+    }
+
+    .kontenrental{
+        margin-inline: 80px;
+    }
+
+
+    .kontenrental .bagiannya{
+        display: flex;
+        align-items: center;
+        margin-block: 30px;
+        width: 600px;
+        color: #C00000;
+        border-radius: 10px;
+        background-color: #5555551c;
+        padding-block: 10px;
+        box-shadow: 0 6px 10px rgba(80, 80, 80, 0.15);
+        transition: transform 0.3s ease;
+    }
+
+    .kontenrental .bagiannya:hover{
+      transform: translateX(5px);
+      background-color: #C00000;
+      color: white;
+    }
+    
+
+    .konten{
+        display: flex;
+        align-items: center;
+      }
+
+
+    .kontenrental .bagiannya .iconi {
+        font-size: 30px;
+        margin-inline: 25px;
+      }
+
+      .kontenrental .bagiannya:hover .iconi{
+        color: white;
+      }
+
+
+      .gambarrental1{
+        margin-right: 80px;
+      }
+
+      .gambarrental1 img{
+        width: 100%;
+        height: 400px;
+        border-radius: 2px;
+      }
+
+
+      .gambarrental{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        width: 40%; 
+        text-align: center;
+        align-items: center;
+        border: 1px solid;
+      }
+    
+    .gambarrental .rental1 img {
+        max-width: 80%; 
+        height: 250px; 
+        border-radius: 2px; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    }
+
+    .rental1 {
+      margin-bottom: 20px;
+    }
+    .rental1 h4{
+      font-size: 15px;
+    }
+
+
+    
+/*footer*/
+.footer {
+    background-color: #1F497D;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    margin-top: 200px;
+  }
+
+  .copyfooter {
+    margin-bottom: 10px;
+  }
+
+  .copyrightfooter h1 {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .copyrightfooter p {
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+    
+  }
+
+  .iconisupplier {
+    color: #C00000 ;
+    font-size: 40px;
+}
+
+.iconisupplier:hover {
+  color: white ;
+}
+
+.iconisupplier1 {
+  color: #C00000 ;
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+  .ikon1 {
+    position: absolute;
+    right: 30px;
+    top: 2%;
+    transform: translateY(-50%);
+    color: white;
+  }
+
+  .ikon1 a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .icon1 {
+    font-size: 24px;
+    color: white !important; 
+  }
+
+  .ikon1 a:hover .icon1 {
+    color: #ffffff; 
+  }
+
+  @media screen and (max-width: 768px) {
+    .copyrightfooter h1 {
+        font-size: 10px;
+        font-weight: bold;
+        margin: 0;
+      }
+    
+      .copyrightfooter p {
+        font-size: 8px;
+    
+        }
+
+  }
+
+  
+  .supplier {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .supplier1 {
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .supplier1 h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #C00000;
+  }
+  
+  .iconi {
+    font-size: 50px;
+    color: #C00000;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    padding: 0;
+    text-align: justify;
+  }
+  
+  ul li {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .supplier1:hover {
+    background-color: #C00000;
+    color: white; 
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(196, 60, 60, 0.15);
+  }
+  
+  .supplier1:hover h3,
+  .supplier1:hover .iconisupplier,
+  .supplier22:hover .iconisupplier,
+  .bagiannya:hover .iconisupplier1,
+  .supplier1:hover ul li {
+    color: white; 
+  }
+
+  .kontensuppier{
+    background-color: #5555551c;
+    margin-inline: 80px;
+    margin-top: 30px;
+  }
+  
+  .supplier2{
+    margin-top: -30px;
+    margin-inline: 80px;
+    background-color: #5555551c;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+      }
+
+  .supplier22{
+    display: flex;
+    align-items: center;
+  }
+
+  .supplier22 h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: #C00000;
+    margin-left: 20px;
+  }
+
+  .supplier2:hover {
+    background-color: #C00000;
+    color: white; 
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(196, 60, 60, 0.15);
+  }
+  
+  .supplier2:hover h3,
+  .supplier2:hover .iconi,
+  .supplier2:hover ul li {
+    color: white; 
+  }
+
+  .contohrental {
+    display: flex;
+    justify-content: center; 
+    gap: 50px;
+    flex-wrap: wrap; 
+    padding: 20px;
+}
+
+.contohrental img {
+    max-width: 500px; 
+    height: 300px;
+    border-radius: 2px; 
+    object-fit: cover; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rental1 {
+  text-align: center;
+}
+
+.rental1 h4{
+  margin-top: 30px;
+}
+

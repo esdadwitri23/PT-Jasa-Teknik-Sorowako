@@ -1,0 +1,370 @@
+*{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font-family: "Roboto Flex", serif;
+}
+
+.rata-justify {
+    text-align: justify;
+    font-family: "Roboto Flex", serif;
+}
+
+.point-deskripsi a{
+    text-decoration: none;
+    color: white;
+}
+
+.point-deskripsi a:hover{
+    color: black;
+
+}
+
+
+img{
+    transition: transform 0.3s ease;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+
+section.headerservis {
+    background: url('asset/mechanicalbg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-inline: 50px;
+    text-align: center;
+    overflow: hidden; 
+    margin-bottom: 50px;
+
+}
+
+section.headerservis::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: linear-gradient(to top, white, transparent);
+    z-index: 0; 
+}
+
+section.headerservis h1 {
+    color: white;
+    font-size: 70px;
+    text-align: center; 
+    position: relative;
+    z-index: 2; 
+    display: inline-block;
+}
+
+section.headerservis h1::after {
+    content: '';
+    display: block;
+    width: 250px;
+    height: 5px;
+    background-color: #FFCE08; 
+    margin: 10px auto 0 auto; 
+}
+
+
+
+/*Pengantar*/
+
+.pengantar {
+    margin-inline: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-block: 30px;
+    align-items: center;
+
+}
+
+.pengantar .deskrpsi {
+    width: 600px;
+    border-bottom: 2px solid red;
+    margin-top: 20px;
+}
+
+.pengantar .deskrpsi p{
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.pengantar .point-deskripsi{
+    width: 500px;
+    background-color: red;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 20px;
+}
+
+.judulbesar h5 {
+    font-size: 50px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 45px;
+    margin-inline: 80px;
+    margin-bottom: -250px;
+}
+
+.judulkecil {
+    margin-inline: 80px;
+    margin-top: -20px;
+}
+
+
+.judulkecil .judulgambar{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.judulkecil .judulgambar img{
+    width: 550px;
+}
+
+.judulkecil .judul h6 {
+    font-size: 30px;
+    color: red;
+}
+
+.judulkecil .judul h6::after {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: #FFCE08;
+    margin: 10px 0 0 0;
+}
+
+.judulkecil .judul p {
+    font-size: 18px; 
+    line-height: 30px;
+    margin-bottom: 30px;
+    text-align: justify; 
+    width: 80%;
+    margin-top: 20px;
+}
+
+
+.judul ol li{
+    text-align: justify;
+    font-family: "Roboto Flex", serif;
+    font-size: 18px; 
+    line-height: 20px;
+    text-align: justify; 
+    width: 80%;
+    margin-top: 10px;
+}
+
+.gambar {
+    flex: 0 0 40%; 
+    text-align: center;
+}
+
+.gambar img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    section.headerservis h1 {
+        font-size: 50px;
+    }
+    
+    .kontenservis {
+        margin-inline: 30px; 
+    }
+
+    .judulkecil {
+        flex-wrap: wrap;
+    }
+
+    .judul, .gambar {
+        flex: 0 0 100%;
+        margin-right: 0;
+    }
+
+    .judul h6 {
+        font-size: 25px; 
+    }
+
+    .judulkecil .judul p {
+        font-size: 16px; 
+        line-height: 30px;
+    }
+
+    .gambar img {
+        width: 90%;
+        margin-top: 20px; 
+    }
+
+    .judulbesar h5 {
+        font-size: 40px;
+    }
+}
+
+.accordion-body {
+    display: flex; 
+    justify-content: space-around;
+}
+
+.bulat {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 50px; 
+    max-width: 800px; 
+}
+
+.gambarelbow{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px;
+    margin-inline: 80px;
+}
+
+.bulatmotor{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 50px; 
+    left: -80px;
+}
+
+.bulat1, .bulatmotor {
+    text-align: center; 
+    color: #1F497D;
+}
+
+.bulat1 h6{
+    font-size: 18px;
+}
+
+.bulat1 img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%;
+    object-fit: cover; 
+    border: 2px solid rgb(248, 248, 248);
+}
+
+.judulelbow .judulgambar h6{
+    font-size: 30px;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+}
+
+.judulgambar h6::after {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: #FFCE08;
+    margin: 10px auto 0 auto; 
+}
+
+.elbow1 h4{
+    font-weight: bold;
+    font-family: "Roboto Flex", serif;
+    font-size: 18px;
+
+}
+
+
+
+/*footer*/
+.footer {
+    background-color: #1F497D;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    margin-top: 200px;
+  }
+
+  .copyfooter {
+    margin-bottom: 10px;
+  }
+
+  .copyrightfooter h1 {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .copyrightfooter p {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .ikon1 {
+    position: absolute;
+    right: 30px;
+    top: 2%;
+    transform: translateY(-50%);
+  }
+
+  .ikon1 a {
+    text-decoration: none;
+  }
+
+  .icon1 {
+    font-size: 24px;
+    color: #FFD700; 
+  }
+
+  .ikon1 a:hover .icon1 {
+    color: #ffffff; 
+  }
+
+  @media screen and (max-width: 768px) {
+    .copyrightfooter h1 {
+        font-size: 10px;
+        font-weight: bold;
+        margin: 0;
+      }
+    
+      .copyrightfooter p {
+        font-size: 8px;
+    
+        }
+
+  }
+
+
+
+  .gambarelbow{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 50px; 
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .gambarelbow h4{
+    margin-block: 20px;
+    font-size: 15px;
+  }
+
+  .elbow1 img{
+    display: block;
+    max-width: 250px ;
+    max-height: 250px ;
+  }

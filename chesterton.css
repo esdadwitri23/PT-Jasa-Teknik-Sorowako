@@ -1,0 +1,239 @@
+*, body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+
+
+section.headerservis {
+    background: url('asset/catalogbg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Menaruh konten (h1) di tengah vertikal */
+    position: relative;
+    padding-inline: 50px;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
+section.headerservis::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to top, white, transparent);
+    z-index: 0; 
+}
+
+section.headerservis h1 {
+    color: white;
+    font-size: 70px;
+    text-align: center; 
+    position: relative;
+    z-index: 2; 
+    display: inline-block;
+}
+
+section.headerservis h1::after {
+    content: '';
+    display: block;
+    width: 250px;
+    height: 5px;
+    background-color: #FFCE08; 
+    margin: 10px auto 0 auto; 
+}
+
+.kotakcatalog {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: #ddd;
+    margin-top: -26px;
+}
+
+.kotakclient {
+    background-color: white;
+    width: 270px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 330px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+     
+}
+
+
+.kotakclient:hover{
+    transform: scale(1.1);
+}
+
+.client {
+    position: relative;
+}
+
+
+
+.gambarclient iframe {
+    width: 95%;
+    height: 200px;
+    border: none;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.iconi {
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    bottom: -10px;
+    right: 30px;
+    z-index: 10;
+    background-color: #FFCE08;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; 
+}
+
+.iconi:hover {
+    transform: scale(1.2);
+}
+
+.deskripsiclient {
+    padding: 14px;
+    text-align: center;
+}
+
+.deskripsiclient h3 {
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.deskripsiclient p {
+    margin: 3px 0 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    padding-inline: 20px;
+    border-radius: 8px;
+    width: 80%;
+    height: 80%;
+    position: relative;
+}
+
+.modal-content iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.modal .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+.modal .close:hover {
+    color: red;
+}
+
+.footerprofil {
+    background-color: #1F497D;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+  }
+
+  .copyfooterprofil {
+    margin-bottom: 10px;
+  }
+
+  .copyrightfooterprofil h1 {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .copyrightfooterprofil p {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .ikonprofil {
+    position: absolute;
+    right: 30px;
+    top: 2%;
+    transform: translateY(-50%);
+  }
+
+  .ikonprofil a {
+    text-decoration: none;
+  }
+
+  .iconprofil {
+    font-size: 24px;
+    color: white; 
+    background-color: #FFD700;
+    border-radius: 50%;
+    padding:12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease; 
+  }
+
+  .ikonprofil a:hover .iconprofil {
+    color: #ffffff; 
+    transform: scale(1.1);
+  }
+
+  @media screen and (max-width: 768px) {
+    .copyrightfooter h1 {
+        font-size: 10px;
+        font-weight: bold;
+        margin: 0;
+      }
+    
+      .copyrightfooter p {
+        font-size: 8px;
+    
+        }
+
+  }
